@@ -1,11 +1,17 @@
-// when we get a message from the app, display it on the page
-ThunkableWebviewerExtension.receiveMessage(function(message) {
-    // Do something with your message
-    
-  });
+
 
   rdmnmbr = Math.floor(100000 + Math.random() * 900000)
-  document.getElementById('code').innerHTML= rdmnmbr
-  
+ 
   ThunkableWebviewerExtension.postMessage(rdmnmbr)
+
+  function CheckforCode()
+  {
+    userincode = document.getElementById('code').value
+    
+      x= document.getElementById('submit')
+      x.style.display = "none"
+      window.location.href = "videocll.html";
+      document.getElementById('result').innerHTML = 'Logging you in'
+    
+  }
   
