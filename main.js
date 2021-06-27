@@ -9,6 +9,7 @@ function Checkforcode() {
   if (userincode == rdmnmbr) {
     window.open("videocll.html");
     document.getElementById('result').innerHTML = 'Logging you in'
+    verified = 'true'
   }
   else
     document.getElementById('result').innerHTML = 'Code Invalid'
